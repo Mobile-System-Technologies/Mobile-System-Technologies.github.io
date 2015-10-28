@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MoSyT&#39;s Blog.</title>
+    <description>Este es el Blog de Mosyt, como empresa consideramos responsable el uso de las nuevas tecnologias web, para contribuir con la comunidad de desarrolladores y brindar ejemplos, tutoriales y compartir las experiencias de nuestros desarrolladores. En MoSyT estamos interesados en apoyar a los estudiantes y contribuir a los recursos que puedan acceder.</description>
+    <link>http://blog.mosyt.org/</link>
+    <atom:link href="http://blog.mosyt.org/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 27 Oct 2015 19:29:20 -0600</pubDate>
+    <lastBuildDate>Tue, 27 Oct 2015 19:29:20 -0600</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Somos Mobile System Technologies</title>
+        <description>&lt;h1 id=&quot;hola-somos-mosyt&quot;&gt;Hola! Somos MoSyT&lt;/h1&gt;
+
+&lt;p&gt;Este es nuestro Blog, somos una empresa mexicana de desarrollo de software.&lt;/p&gt;
+
+&lt;p&gt;A partir de el proximo &lt;strong&gt;Lunes 2 de Octubre de 2015&lt;/strong&gt; iniciara el proyecto de
+el blog de nuestra empresa, todos los dias un integrante expondra por medio de
+el blog, una situacion, experiencia o algun ejemplo/tutorial para bien de la comunidad y que sirva como futura referencia para aquellos estudiantes que busquen aprender mas.&lt;/p&gt;
+
+&lt;p&gt;Mi nombre es Angel Munoz Y pronto nos estaremos viendo aqui :)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 13:10:49 -0600</pubDate>
+        <link>http://blog.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</link>
+        <guid isPermaLink="true">http://blog.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</guid>
+        
+        
+        <category>mosyt</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

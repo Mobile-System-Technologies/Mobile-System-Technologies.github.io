@@ -1,0 +1,11 @@
+# Site settings
+title: MoSyT's Blog.
+email: contact@mosyt.org
+description: Este es el Blog de Mosyt, como empresa consideramos responsable el uso de las nuevas tecnologias web, para contribuir con la comunidad de desarrolladores y brindar ejemplos, tutoriales y compartir las experiencias de nuestros desarrolladores. En MoSyT estamos interesados en apoyar a los estudiantes y contribuir a los recursos que puedan acceder.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.mosyt.org" # the base hostname & protocol for your site
+twitter_username: Mosyt_official
+github_username:  Mobile-System-Technologies
+
+# Build settings
+markdown: kramdown
