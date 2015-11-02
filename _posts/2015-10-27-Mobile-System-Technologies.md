@@ -2,8 +2,9 @@
 layout: post
 title:  "Somos Mobile System Technologies"
 date:   2015-10-27 19:10:49
-categories: MoSyT update
-blog-author: Angel Munoz
+categories: MoSyT Update
+author: Angel Munoz
+tags: MoSyT Intro
 ---
 # Hola! Somos MoSyT
 
