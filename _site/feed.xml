@@ -5,13 +5,157 @@
     <description>Este es el Blog de Mosyt, como empresa consideramos responsable el uso de las nuevas tecnologias web, para contribuir con la comunidad de desarrolladores y brindar ejemplos, tutoriales y compartir las experiencias de nuestros desarrolladores. En MoSyT estamos interesados en apoyar a los estudiantes y contribuir a los recursos que puedan acceder.</description>
     <link>http://blog.mosyt.org/</link>
     <atom:link href="http://blog.mosyt.org/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Oct 2015 19:29:20 -0600</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2015 19:29:20 -0600</lastBuildDate>
+    <pubDate>Wed, 04 Nov 2015 15:45:33 -0700</pubDate>
+    <lastBuildDate>Wed, 04 Nov 2015 15:45:33 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
+        <title>Hello F#</title>
+        <description>&lt;h1&gt;Indagando en F#!&lt;/h1&gt;
+
+&lt;p&gt;Hola Mucho gusto, Mi nombre es Angel Munoz, Trabajo como Desarrollador de software en &lt;strong&gt;Mobile System Technologies&lt;/strong&gt; (MoSyT).&lt;/p&gt;
+
+&lt;p&gt;Generalmente estoy envuelto en proyectos de  aplicaciones moviles, aplicaciones Web, sitios Web y generalmente lo que tiene que ver con Web :).&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Hoy les presento una leve introduccion a F#, un lenguaje open source, multiplataforma y con el paradigma de la programacion funcional
+&lt;a href=&quot;http://fsharp.org/&quot;&gt;F#&lt;/a&gt;, aunque tambien tiene soporte para la orientacion a objetos, un lenguaje bastante dinamico.&lt;/p&gt;
+
+&lt;p&gt;En este momento estoy aprendiendo F# y quisera compartir lo poco que he aprendido hasta este momento.&lt;/p&gt;
+
+&lt;p&gt;F# tambien es parte de el framework .NET.
+para mas informacion dobre F# visiten http://fsharp.org/&lt;/p&gt;
+
+&lt;p&gt;Este ejemplo fue hecho con &lt;a href=&quot;https://www.visualstudio.com/&quot;&gt;Visual Studio 2015 Community Edition&lt;/a&gt; y Visual F#, otros codigos de ejemplo hechos por mi se pueden encontrar en: &lt;a href=&quot;https://github.com/AngelMunoz/edxFSharpLabs&quot;&gt;edxFSharpLabs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;F# como un lenguaje funcional, generalmente toda ejecucion deberia ser una expresion en lugar de una sentencia,
+es decir que en F# una funcion siempre deberia regresar un valor:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fsharp&quot; data-lang=&quot;fsharp&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// let es una palabra&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// que nos permite enlazar un valor a alguna variable&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// f(x) = x + y&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// let &amp;lt;variable&amp;gt; [lista de parametros] = &amp;lt;cuerpo de la funcion o valor&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como cualquier ejemplo inicial de un lenguaje de programacion, procederemos con el clasico hola mundo&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fsharp&quot; data-lang=&quot;fsharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// igual a using System en F# o import en java&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// le indica al compilador que la aplicacion inicia aqui&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// funcion con la misma idea de un Main de java o C#&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Hola Mundo!&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Imprime a la consola Hola Mundo&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadKey&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// esperamos a que el usuario salga de la aplicacion.&lt;/span&gt;
+    &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// esto es igual que un return 0 //&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como se puede observar F# tiene ciertas similitudes con lenguajes como &lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt; y pues precisamente con &lt;a href=&quot;https://msdn.microsoft.com/en-us/library/kx37x362.aspx&quot;&gt;C#&lt;/a&gt;. por aquello del &lt;code&gt;Console.ReadKey()&lt;/code&gt;
+hagamos algo un poco mas complejo que tal un programa que calcule el volumen de un cilindro:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fsharp&quot; data-lang=&quot;fsharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//importamos la libreria System&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Formula para el calculo del Volumen de un Cilindro&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;volumen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;[&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printfn&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Por Favor Ingrese el Radio del Cilindro: &amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// Leemos desde la Consola.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;r&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Convertimos el dato ingresado en un float&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printfn&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Por Favor Ingrese la Altura del Cilindro: &amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Leemos desde la Consola&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;h&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Convertimos el dato en un Floar&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volumen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//calculate&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;El Volumen del Cilindro es: %f&amp;quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// imprimimos el resultado.&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadKey&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Esperamos a que el usuario presione una tecla&lt;/span&gt;
+    &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// codigo de salida 0 , exitoso&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;que tal ahora si agregamos una funcion que incluya control de flujo en la aplicacion. En F# para seguir con el paradigma de la programacion funcional, todos los if then - elif then - else que existan deben de regresar el mismo tipo de dato y siempre deben regresar algo.
+por ejemplo:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fsharp&quot; data-lang=&quot;fsharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;ejemplo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// otra diferencia es que no comparamos a == b, sino a = b en F#&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&amp;quot;X = 0&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// return string&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&amp;quot;x es positivo&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// return string&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//   x // si retornaramos x marcaria un error de compilacion&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// por que el if y el elif no regresan el mismo tipo de dato&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;&amp;quot;x es negativo&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// return string&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fsharp&quot; data-lang=&quot;fsharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// importamos System&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;agechecker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Funcion que revisa la edad con los parametros edad y nombre&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; ya no es un adolescente&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// regresamos un string&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; aun es un/a adolescente&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// regresamos un string&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; aun es un infante&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// regresamos un string&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;[&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// punto de entrada de la aplicacion&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// funcion main&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Por favor ingrese su nombre: &amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Leemos el nombre desde consola&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Por favor ingrese su edad: &amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;edad&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Leemos Edad desde la Consola&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;edad&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;edad&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Convertimos el string en un integer&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;agechecker&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;edad&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//ejecutamos la funcion y enlazamos su resultado a la variable resultado&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Imprimimos a la consola el resultado.&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadKey&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// return an integer exit code&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;OK, vamos bien, que tal si ahora agregamos algo de ciclos?&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-fsharp&quot; data-lang=&quot;fsharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;System&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// punto de entrada de la aplicacion&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// funcion main&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Por favor Ingrese un Numero: &amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadLine&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// leemos el numero desde la consola&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// convertimos el numero&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;indice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//declaramos el for incremental&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Posicion: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;indice&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//ejecutamos codigo, en este caso solo mostramos las interaciones en consola&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// ahora en reversa&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Ahora en Reversa&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;indice&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numero&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;downto&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Posicion: %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;indice&lt;/span&gt;
+    &lt;span class=&quot;nn&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReadKey&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Esperamos a que el usuario presione una tecla&lt;/span&gt;
+    &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// codigo de salida exitoso&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Y por el momento esas son algunas de las funcionalidades basicas de F#, espero que sea comprensible.
+F# es un lenguaje que promete muchas cosas y me llama mucho la atencion aprenderlo. es un paradigma diferente al que tengo
+(Orientacion a objetos) y tiene un enfoque mas matematico, espero que me ayude en algunas cosas que generalmente no estoy acostumbrado a hacer.
+Mi nombre es Angel Munoz, nos vemos el proximo &lt;strong&gt;Martes 10 de Noviembre del 2015&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Dudas, Comentarios o encontraste on typo? hasme saber, en el &lt;a href=&quot;https://github.com/Mobile-System-Technologies/Mobile-System-Technologies.github.io/issues&quot;&gt;Repositorio de MoSyT&lt;/a&gt; o personalmente en twitter &lt;a href=&quot;https://twitter.com/daniel_tuna&quot;&gt;@Daniel_Tuna&lt;/a&gt; o en Facebook &lt;a href=&quot;https://www.facebook.com/danieltunamunoz&quot;&gt;Angel Munoz&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Nov 2015 06:25:26 -0700</pubDate>
+        <link>http://blog.mosyt.org/dev/post/desktop/2015/11/04/FSharp.html</link>
+        <guid isPermaLink="true">http://blog.mosyt.org/dev/post/desktop/2015/11/04/FSharp.html</guid>
+        
+        <category>F#</category>
+        
+        <category>Visual</category>
+        
+        <category>Studio</category>
+        
+        <category>2015</category>
+        
+        
+        <category>dev</category>
+        
+        <category>post</category>
+        
+        <category>desktop</category>
+        
+      </item>
+    
+      <item>
+        <title>PRUEBA</title>
+        <description>&lt;p&gt;PRUEBA!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 13:10:49 -0600</pubDate>
+        <link>http://blog.mosyt.org/mosyt/update/2015/10/27/prueba.html</link>
+        <guid isPermaLink="true">http://blog.mosyt.org/mosyt/update/2015/10/27/prueba.html</guid>
+        
+        
+        <category>mosyt</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
         <title>Somos Mobile System Technologies</title>
-        <description>&lt;h1 id=&quot;hola-somos-mosyt&quot;&gt;Hola! Somos MoSyT&lt;/h1&gt;
+        <description>&lt;h1&gt;Hola! Somos MoSyT&lt;/h1&gt;
 
 &lt;p&gt;Este es nuestro Blog, somos una empresa mexicana de desarrollo de software.&lt;/p&gt;
 
@@ -24,6 +168,10 @@ el blog, una situacion, experiencia o algun ejemplo/tutorial para bien de la com
         <pubDate>Tue, 27 Oct 2015 13:10:49 -0600</pubDate>
         <link>http://blog.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</link>
         <guid isPermaLink="true">http://blog.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</guid>
+        
+        <category>MoSyT</category>
+        
+        <category>Intro</category>
         
         
         <category>mosyt</category>

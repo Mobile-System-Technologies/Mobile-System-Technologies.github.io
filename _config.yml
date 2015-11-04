@@ -8,4 +8,4 @@ twitter_username: Mosyt_official
 github_username:  Mobile-System-Technologies
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
