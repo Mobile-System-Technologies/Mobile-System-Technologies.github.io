@@ -2,7 +2,7 @@
 layout: post
 title:  "Mi Aprendizaje de Marketing, hasta el momento"
 date:   2015-11-06 12:50:00
-categories: marketing
+categories: MoSyT Update
 author: Alan Valles
 tags: MoSyT Intro experiencias marketing
 comments: true
