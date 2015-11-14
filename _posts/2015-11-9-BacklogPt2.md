@@ -2,9 +2,10 @@
 layout: post
 title:  "The world changes, the Backlog is never finished. Parte 2"
 date:   2015-11-09 11:40:49
-categories: MoSyT update
+categories: diseño
 author: David Salas
 tags: diseño ingenieria software scrum backlog producto
+comments: true
 ---
 
 En la publicación anterior tuvimos un pequeño acercamiento a Scrum y a su backlog. Como recordatorio:
