@@ -5,6 +5,7 @@ date:   2015-11-12 11:00:00
 categories: MoSyT Update 
 author: Alan Valles 
 tags: MoSyT Intro 
+comments: true
 --- 
 # Hola! 
  
