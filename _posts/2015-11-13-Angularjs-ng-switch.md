@@ -5,6 +5,7 @@ date:   2015-11-13 15:00:00
 categories: Post
 author: Jonathan Lara Bustos
 tags: Angularjs JavaScript ng-switch
+comments: true
 ---
 
 #Presentación
