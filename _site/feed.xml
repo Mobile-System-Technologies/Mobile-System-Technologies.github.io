@@ -3,8 +3,8 @@
   <channel>
     <title>MoSyT&#39;s Blog.</title>
     <description>Este es el Blog de Mosyt, como empresa consideramos responsable el uso de las nuevas tecnologias web, para contribuir con la comunidad de desarrolladores y brindar ejemplos, tutoriales y compartir las experiencias de nuestros desarrolladores. En MoSyT estamos interesados en apoyar a los estudiantes y contribuir a los recursos que puedan acceder.</description>
-    <link>http://blog.mosyt.org/</link>
-    <atom:link href="http://blog.mosyt.org/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://blogold.mosyt.org/</link>
+    <atom:link href="http://blogold.mosyt.org/feed.xml" rel="self" type="application/rss+xml" />
     <pubDate>Wed, 04 Nov 2015 15:45:33 -0700</pubDate>
     <lastBuildDate>Wed, 04 Nov 2015 15:45:33 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
@@ -118,8 +118,8 @@ Mi nombre es Angel Munoz, nos vemos el proximo &lt;strong&gt;Martes 10 de Noviem
 &lt;p&gt;Dudas, Comentarios o encontraste on typo? hasme saber, en el &lt;a href=&quot;https://github.com/Mobile-System-Technologies/Mobile-System-Technologies.github.io/issues&quot;&gt;Repositorio de MoSyT&lt;/a&gt; o personalmente en twitter &lt;a href=&quot;https://twitter.com/daniel_tuna&quot;&gt;@Daniel_Tuna&lt;/a&gt; o en Facebook &lt;a href=&quot;https://www.facebook.com/danieltunamunoz&quot;&gt;Angel Munoz&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Nov 2015 06:25:26 -0700</pubDate>
-        <link>http://blog.mosyt.org/dev/post/desktop/2015/11/04/FSharp.html</link>
-        <guid isPermaLink="true">http://blog.mosyt.org/dev/post/desktop/2015/11/04/FSharp.html</guid>
+        <link>http://blogold.mosyt.org/dev/post/desktop/2015/11/04/FSharp.html</link>
+        <guid isPermaLink="true">http://blogold.mosyt.org/dev/post/desktop/2015/11/04/FSharp.html</guid>
         
         <category>F#</category>
         
@@ -143,8 +143,8 @@ Mi nombre es Angel Munoz, nos vemos el proximo &lt;strong&gt;Martes 10 de Noviem
         <description>&lt;p&gt;PRUEBA!&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Oct 2015 13:10:49 -0600</pubDate>
-        <link>http://blog.mosyt.org/mosyt/update/2015/10/27/prueba.html</link>
-        <guid isPermaLink="true">http://blog.mosyt.org/mosyt/update/2015/10/27/prueba.html</guid>
+        <link>http://blogold.mosyt.org/mosyt/update/2015/10/27/prueba.html</link>
+        <guid isPermaLink="true">http://blogold.mosyt.org/mosyt/update/2015/10/27/prueba.html</guid>
         
         
         <category>mosyt</category>
@@ -166,8 +166,8 @@ el blog, una situacion, experiencia o algun ejemplo/tutorial para bien de la com
 &lt;p&gt;Mi nombre es Angel Munoz Y pronto nos estaremos viendo aqui :)&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Oct 2015 13:10:49 -0600</pubDate>
-        <link>http://blog.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</link>
-        <guid isPermaLink="true">http://blog.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</guid>
+        <link>http://blogold.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</link>
+        <guid isPermaLink="true">http://blogold.mosyt.org/mosyt/update/2015/10/27/Mobile-System-Technologies.html</guid>
         
         <category>MoSyT</category>
         
